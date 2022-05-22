@@ -72,7 +72,7 @@ app.post("/api/notes", (req, res) => {
     })
     .then(function (notes) {
       writeFileAsync("./db/db.json", JSON.stringify(notes));
-      res.json(note);
+      res.json(notes);
     });
 });
 
