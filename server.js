@@ -3,6 +3,7 @@ const express = require("express");
 const path = require("path");
 const fs = require("fs");
 const util = require("util");
+const uuid = require("../../UADEL-VIRT-FSF-PT-02-2022-U-LOL/11-Express/01-Activities/24-Stu_Custom-Middleware/Solved/helpers/uuid");
 
 // Asynchronous process handling in this lines
 const readFileAsync = util.promisify(fs.readFile);
@@ -38,12 +39,28 @@ app.get("/api/notes", (req, res) => {
 
 //Api route "POST" request
 app.post("/api/notes", (req, res) => {
-  const note = req.body;
+  // const note = req.body;
+  // const newNote = {
+  //   title: req.body.title,
+  //   text: req.body.text,
+  //   id: req.body.id
+  // }
+  const  {title, text, id} = req.body;
+
+  if (req.body) {
+    const newNote = {
+      title,
+      tip,
+      id: uuid()
+    };
+  }
   readFileAsync("./db/db.json", "utf8")
     .then(function (data) {
+      console.log(data);
       const notes = [].concat(JSON.parse(data));
-      notes.id = notes.length + 1;
-      notes.push(note);
+      // notes.id = notes.length + 1;
+      notes.push(newNote);
+      console.log(notes);
       return notes;
     })
     .then(function (notes) {
@@ -72,9 +89,6 @@ app.delete("/api/notes/:id", (req, res) => {
     });
 });
 
-//  test again the delete function
-
-// chechk again for ahndler
 
 // html routes
 app.get("/", (req, res) => {
