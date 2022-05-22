@@ -72,6 +72,8 @@ app.delete("/api/notes/:id", (req, res) => {
     });
 });
 
+//  test again the delete function
+
 // chechk again for ahndler
 
 // html routes
