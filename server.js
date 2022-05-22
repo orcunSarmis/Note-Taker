@@ -3,7 +3,8 @@ const express = require("express");
 const path = require("path");
 const fs = require("fs");
 const util = require("util");
-const uuid = require("../../UADEL-VIRT-FSF-PT-02-2022-U-LOL/11-Express/01-Activities/24-Stu_Custom-Middleware/Solved/helpers/uuid");
+const {v4: uuidv4} = require("uuid");
+// const uuid = require("../../UADEL-VIRT-FSF-PT-02-2022-U-LOL/11-Express/01-Activities/24-Stu_Custom-Middleware/Solved/helpers/uuid");
 
 // Asynchronous process handling in this lines
 const readFileAsync = util.promisify(fs.readFile);
@@ -43,17 +44,23 @@ app.post("/api/notes", (req, res) => {
   // const newNote = {
   //   title: req.body.title,
   //   text: req.body.text,
-  //   id: req.body.id
+  //   id: req.body.uuidv4()
   // }
-  const  {title, text, id} = req.body;
 
-  if (req.body) {
+  const  {title, text, id} = req.body;
     const newNote = {
       title,
-      tip,
-      id: uuid()
+      text,
+      id: uuidv4()
     };
-  }
+
+  // if (req.body) {
+  //   const newNote = {
+  //     title,
+  //     tip,
+  //     id: uuidv4()
+  //   };
+  // }
   readFileAsync("./db/db.json", "utf8")
     .then(function (data) {
       console.log(data);
