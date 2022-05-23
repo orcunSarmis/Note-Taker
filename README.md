@@ -24,6 +24,9 @@
   ```
   npm i
   ```
+  
+  Click on link below to see a demo of the application:
+  https://drive.google.com/file/d/10ciOzJt8f63sibP77uEr8Sd556ccAprz/view?usp=sharing
 
   ## Contributing
 
