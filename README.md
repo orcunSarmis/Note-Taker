@@ -4,11 +4,15 @@
   
   ## Description 
   
-  some
+  The Note Taker application is designed to allow users to write and save notes. The application uses an Express.js back end system. Notes are saved and retrieved from a JSON file. 
+  
+  When opening the Note Taker app, users are invited to click on 'Get Started' 
   ![note0](https://user-images.githubusercontent.com/79064464/169840001-f2915aaf-2e95-46e3-9936-f73d4703377f.png)
   
+  They can then create a new note and save it with the save icon on top right hand site of the screen.  
   ![note1](https://user-images.githubusercontent.com/79064464/169840041-1b63cfa6-6166-47fa-a3be-f0626b262b84.png)
 
+  Users can see archived notes on the left hand panel. They also have the possibility to delete notes by clicking on the red bin icon. 
   ![note2](https://user-images.githubusercontent.com/79064464/169840074-55794d05-1c7a-4f9c-bed3-035754aee295.png)
 
   ## Table of Content
