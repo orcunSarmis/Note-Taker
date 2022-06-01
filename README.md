@@ -26,18 +26,16 @@
 
   ## Usage
 
-  Clone the repo first and run the following command at the root of your project and answer the prompted questions:
-
-  https://github.com/orcunSarmis/Note-Taker
+  Clone my [GitHub](https://github.com/orcunSarmis/Note-Taker) repo first and run the following command at the root of your project and answer the prompted questions:
 
   ```
   npm i
   ```
-  Click on the link below to see the Heroku deployment:
-  https://brainfriend0.herokuapp.com/
+  Click on this [Heroku](https://brainfriend0.herokuapp.com/) link  to see the  deployment.
   
+  Use this [Walkthrough](https://drive.google.com/file/d/10ciOzJt8f63sibP77uEr8Sd556ccAprz/view?usp=sharing) video as a guide for using this application.
   Click on the link below to see a demo of the application:
-  https://drive.google.com/file/d/10ciOzJt8f63sibP77uEr8Sd556ccAprz/view?usp=sharing
+  
 
   ## Contributing
 
@@ -61,4 +59,4 @@
 
   ## Questions
 
-  If you have any questions about the repo, open an issue or contact me directly at yorcunsarmis@gmail.com. You can find more of my work at [orcunSarmis](https://github.com/orcunSarmis/).
+  If you have any questions about the repo, open an issue or contact me directly at yorcunsarmis@gmail.com. You can find more of my work in my [GitHub](https://github.com/orcunSarmis/) page.
